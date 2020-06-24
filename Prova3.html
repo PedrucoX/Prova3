@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Prova3</title>
+    <style>
+        
+
+.container{
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.top{
+    max-width: 100%;
+    background: #5293DE;
+    height: 50px;
+}
+
+.header{
+    align-items: center;
+    max-width: 100%;
+    background: #AFD5FF;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+}
+
+.features{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-features{
+    display: none;
+}
+
+
+.yellow{
+    background: #F9CE8C;
+}
+
+.blue{
+    background: #C8C9FC;
+}
+
+.pink{
+    background: #F8A39A;
+
+}
+
+.mobile-content{
+    display: none;
+}
+
+.feature{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    background: #EAEDF0;
+}
+
+.sign-up{
+    justify-content: center;
+    display: flex;
+    height: 150px;
+    align-items: center;
+    width: 100%;
+    background: #D3E8FF;
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .content{
+        display: none;
+    }
+
+    .mobile-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        width: 100%;
+        background: #EAEDF0;
+    }
+
+    .header{
+        height: 150px;
+    }
+
+    .features{
+        display: none;
+    }
+
+    .mobile-features{
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .sign-up{
+        display: none;
+    }
+
+    .sign-up-mobile{
+        background: #D4E8FF;
+    }
+
+    .mobile-features, .sign-up-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 420px){
+    .mobile-features{
+        flex-direction: column;
+
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="top">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>(HEADER)</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mobile-content">
+            <h2>(CONTENT)</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="mobile-features"> 
+            <div class="sign-up-mobile">
+                <h2>(SIGN UP) </h2>
+            </div>
+            <div class="mobile-features yellow">
+                <h2>(FEATURE) </h2>
+            </div>
+        </div>
+        <div class="features-mobile">
+            <div class="mobile-features pink">
+                <h2> (FEATURE)</h2>
+            </div>
+            <div class="mobile-features blue">
+                <h2>(FEATURE) </h2>
+            </div>
+        </div>
+    </div>
+    <div class="container features">
+        <div class="feature yellow">
+            <h2>(FEATURE) </h2>
+        </div>
+        <div class="feature blue">
+            <h2> (FEATURE)</h2>
+        </div>
+        <div class="feature pink">
+            <h2>(FEATURE) </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sign-up">
+            <h2>(SIGN UP) </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content" >
+            <h2> (CONTENT)</h2>
+        </div>
+    </div>
+</body>
+</html>
